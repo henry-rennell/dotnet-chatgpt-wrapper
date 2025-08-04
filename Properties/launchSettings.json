@@ -2,7 +2,7 @@
   "profiles": {
     "AzureFunctionsIsolatedBackend": {
       "commandName": "Project",
-      "commandLineArgs": "--port 7090",
+      "commandLineArgs": "--port 7071",
       "launchBrowser": false
     }
   }

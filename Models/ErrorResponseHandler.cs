@@ -32,8 +32,10 @@ public static class ErrorResponseHandler
                 errorMessage = "An unexpected error occurred.";
                 break;
         }
-
-        logger.LogError(ex, errorMessage);
+        if (string.IsNullOrWhiteSpace(errorMessage))
+        {
+            errorMessage = "An unexpected error occurred.";
+        }    
 
         var response = req.CreateResponse(statusCode);
         await response.WriteAsJsonAsync(new { error = errorMessage });
