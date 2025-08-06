@@ -29,6 +29,9 @@ If necessary, install [Azure Functions Core Tools](https://learn.microsoft.com/e
 npm install -g azure-functions-core-tools@4 --unsafe-perm true
 ```
 
+##### OpenAI API Key:
+Ensure environment variable "OPENAI_API_KEY" is present on your machine,
+
 ### 3. Build the Project
 ##### Run
 ```
